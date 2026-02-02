@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+
+    <style>
+        .img{
+            background-color: beige;
+            height: 8000px;
+        }
+        .i1{
+            position: relative; /* current window ke relative me position hoga but the space where the image is intially will remain blank */
+            top: 100px;
+            left: 200px;
+            
+        }
+
+        .i2{
+            position: absolute; /* used for overlapping and it is happened relative to the closest position ansestor or parent */
+            top: 250px;
+
+        }
+
+        .i3{
+            position: sticky; /* position pr intact rhegi just like fixed but ye sirf usi div me rhega jisme define kiya hai ise aur fixed next me ja skta hai (sirf parent container ke andr hi hai) */
+            top: 20px;
+        }
+
+        .i4{
+            position: fixed; /* hmesha fixed rhegi scroll krne ke baad bhi*/
+        }
+
+        .box2{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="img">
+    <img 
+    src="r.JPG" 
+    alt="poster1" 
+    width="300px"
+    class="i1"
+    >
+
+    <img 
+    src="r.JPG" 
+    alt="poster1" 
+    width="300px"
+    class="i2"
+    >
+
+    <img 
+    src="r.JPG" 
+    alt="poster1" 
+    width="300px"
+    class="i3"
+    >
+
+    <img 
+    src="r.JPG" 
+    alt="poster1" 
+    width="300px"
+    class="i4"
+    >
+
+    </div>
+
+    <div class="box2">
+
+    </div>
+</body>
+</html>

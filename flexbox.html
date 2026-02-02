@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 4px solid rgb(78, 26, 26);
+            margin: 2px;
+            padding: 2px;
+            height: 500px;
+
+            display: flex; /* Ye div ab flexbox bn chuka hai or iske element ab flex item bn gye hain  */
+
+            flex-direction: row-reverse; /* Elements aayenge kese row me ya column mein */
+            
+            /* flex-wrap: wrap;*/ /*Wrapping on hoogyi ab size ko squeze krne pr element next line me chle jayenge jb tak space avalable hai then squeze ho jyega ... */
+            
+            /* flex-flow: row wrap;Short hand notation.....*/
+
+            justify-content: end; /* Position elements according to main axis (x axis for row flex direction y for column) */
+
+            align-items: end; /* Act according to cross axis */
+
+            align-content: start; /* Reduce space between contents*/
+
+        }
+
+        .box{
+            /* height: 120px;
+            width: 120px; */
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1{
+            background-color: aqua;
+            /*order: 2;*/ /* item ka order set krne ke liye use hoti hai ki item kis position pr ayegi */
+
+            /*flex-grow: 4;*/ /* The remaining space will be  graped and the grow speed will also increase */
+
+            /*align-self: center;*/ /* Khud ko element align krta hai according to cross axis */ 
+        }
+        #box2{
+            background-color: orangered;
+           /* flex-shrink: 4; */ /* Ab ye box baki box ke comparison me 4 x speed me shrink hoga */
+
+            /* flex-grow: 1; */
+
+            /* flex-basis: 40px;*/ /* Dimension set krnne ke kam ata hai */
+        }
+        #box3{
+            background-color: blue;
+            /* flex-grow: 1; */
+
+            /*align-self: flex-end;*/
+        }
+        #box4{
+            background-color: greenyellow;
+            /* order: -1; */
+
+            /* flex-grow: 1; */
+
+           /* align-self:last baseline; */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Flexbox is a box used to align elements... -->
+
+    <div class="container">
+        <div class="box" id="box1">
+            box 1
+        </div>
+        
+        <div class="box" id="box2">
+            box 2
+        </div>
+
+        <div class="box" id="box3">
+            box 3
+        </div>
+
+        <div class="box" id="box4">
+            box 4
+        </div>
+
+    </div>
+
+</body>
+</html>
