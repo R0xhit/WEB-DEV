@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+<style>
+    h1{
+        background-color: aquamarine;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(0, 15, 59);
+        width: 125px;
+    }
+
+    .firstpara{
+        background-color: beige;
+        /* border: solid 2px rgb(0, 15, 59); */
+        /* border-radius: 5px; */
+        border-top: solid black 5px;
+        border-radius: 5px;
+        width: 350px;
+        /* padding: 30px; Isse border or content ke bich ka space badhta hai */
+        /* margin: 40px; isse 2 boxes ke bich ka gap badhta hai */
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 50px;
+        margin-bottom: 60px;
+        box-sizing: border-box;
+
+
+    }
+
+    .secondpara{
+        background-color: burlywood;
+    }
+
+    .thirdpara{
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <h1>Welcome</h1>
+
+    <p class="firstpara">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim harum commodi eaque eum porro obcaecati laboriosam, assumenda maxime provident ipsum adipisci accusantium eveniet aliquid odio blanditiis itaque iure corrupti temporibus!
+    </p>
+
+    <p class="secondpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id deleniti voluptatem ipsum facilis. Quas dicta consectetur corrupti impedit, ut similique iusto iure doloribus veniam?
+    </p>
+
+    <p class="thirdpara">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat, modi tempora eum reprehenderit rerum voluptatibus iste voluptatum totam!
+    </p>
+
+    
+
+</body>
+</html>
