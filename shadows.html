@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHADOWS</title>
     <style>
+        :root{
+            /* agr variable root me define krein to inhe kahin bhi use krskte hain... */
+            --primary-color: aquamarine;
+        }
         img{
             height: 200px;
         }
@@ -18,8 +22,13 @@
             align-items: center;
         }
 
+        #head1{
+            text-shadow: 1px 1px 1px rgb(103, 143, 103);
+            
+        }
+
         .box{
-            background-color: aquamarine;
+            /* background-color: aquamarine; */
             width: 350px;
             height: 350px;
             border: 1px solid black;
@@ -27,6 +36,10 @@
             padding: 5px;
             box-shadow: 10px 5px 5px 5px brown;
             /* x offset  y offset  blur radius  spread radius  colour */
+            /* To make variable in css use -- sign  */
+            --primary-color: aquamarine;
+            /* use it in code */
+            background-color: var(--primary-color);
         }
     </style>
 </head>
@@ -34,7 +47,7 @@
     <div class="container">
         <div class="box">
             <img src="r.jpg">
-            <h2>Welcome</h2>
+            <h2 id="head1">Welcome</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel odio unde cumque maiores! Magnam eum facilis repudiandae consequuntur suscipit ea, iusto veniam a in?
             </p>
